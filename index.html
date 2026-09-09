@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Caixa - Mercado Gesonel</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/carrinho.png">
+        <h1>Mercado do Gesonel - Mestre dos Descontos</h1>
+        <img src="imagens/carrinho.png">
+    </header>
+
+    <main>
+       <img id="ganso" src="imagens/ganso.png">
+        <div id="container">
+            <div id="titulo">
+            <h1>Caixa</h1>
+            </div>
+            <div class="campos">
+                <label for="txtnome">Nome do produto:</label>
+                <input type="text" id="txtnome">
+            </div>
+            <div class="campos">
+                <label for="txtprecoUnitario">Preço unitário:</label>
+                <input type="number" id="txtprecoUnitario">
+            </div>
+            <div class="campos">
+                <label for="txtQuantidade">Quantidade:</label>
+                <input type="number" id="txtQuantidade">
+            </div>
+            <div class="campos">
+                <label for="selecao">Forma de Pagamento:</label>
+                <select id="selecao">
+                    <option value="" selected disabled>Criptmoeda (Em Breve)</option>
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="pix">PIX - 5% de desconto</option>
+                    <option value="dinheiro">Dinheiro - 10% de desconto</option>
+                    <option value="Cartão">Cartão - Sem desconto</option>
+                </select>
+            </div>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+
+        <div id="resumoCompra">
+            <!--aqui teremos que exibir informaçoes como: nome do produto, quantidade
+            comprada, subtotal, desconto, valor final e forma de pagamento-->
+        </div>
+    </main>
+
+    <footer>
+        <div id="final">
+            <p>&copy;Mercado do Gesonel - Todos os Direitos reservados.</p>
+            <p>Desenvolvido por: <a href="https://github.com/Syncedxx">Syncedx</a> e <a
+                    href="https://github.com/Tycon11">Tycon11</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
